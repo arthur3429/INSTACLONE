@@ -308,6 +308,19 @@ i {
   opacity: 0;
 }
 
+.profile-ul::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  transform: rotate(180deg);
+  left: 81%;
+  width: 0;
+
+  border-top: 10px solid rgba(0, 0, 0, 0.05);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
 .profile-ul hr {
   opacity: 0.3;
 }
@@ -1122,8 +1135,10 @@ aside {
 
 .comments-container {
   transform: scale(1.1);
-  width: 82vw;
-  height: 96vh;
+  max-width: 82vw;
+  max-height: 96vh;
+  width: 100%;
+  aspect-ratio: 14 / 9;
   background-color: white;
   display: flex;
   margin: 0 auto;
@@ -1131,14 +1146,16 @@ aside {
 }
 
 .post-comment-container {
-  max-height: 100%;
-
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover !important;
   background-color: blue;
 }
 
 .post-comment-container img {
   height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
 }
 
 .comment-section img {
@@ -1150,6 +1167,7 @@ aside {
 
 .comment-section {
   margin: 20px;
+
   width: 100%;
 }
 
@@ -1181,7 +1199,7 @@ aside {
 
 .all-comments {
   overflow: auto;
-  height: 68%;
+  max-height: 70%;
 }
 
 .single-comment {
@@ -1263,6 +1281,10 @@ aside {
   margin: 10px;
 }
 
+.teste323 {
+  position: sticky;
+  top: 100%;
+}
 /* Media queries de todas as telas */
 
 @media (max-width: 864px) {
@@ -1283,6 +1305,21 @@ aside {
     max-width: 841px;
     width: 100%;
     gap: 10px;
+  }
+
+  .section-comments {
+    overflow: auto;
+    height: 100%;
+  }
+
+  .comments-container {
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .comment-section {
+    width: auto;
   }
 }
 
@@ -1332,6 +1369,20 @@ aside {
     max-height: 80px;
     max-width: 80px;
     margin: 10px;
+  }
+
+  .comments-container {
+    max-width: 98vw;
+  }
+
+  #container {
+    max-width: 448px;
+    width: auto;
+  }
+
+  .search-box .post-container {
+    height: 100%;
+    width: 100%;
   }
 
   .my-profile-info .info-line1 a,
