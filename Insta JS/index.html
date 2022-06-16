@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header></header>
+  <body id="index-body" onload="script(); feed();">
+    <main>
+      <section>
+
+        <div class="story">
+          <div class="story-button">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+          <div class="story-button2">
+            <i class="ri-arrow-left-s-line"></i>
+          </div>
+
+
+          <div class="story-profile"> 
+            <a href="story.html">
+              <div class="profile-pic border-story">
+                <img src="img/profile-pic.jpg" alt="GC" />
+              </div>
+            </a>
+            <div class="profile-username">_giga</div>
+          </div>
+          <div class="story-profile"> 
+            
+            <a href="story.html">
+              <div class="profile-pic border-story">
+                <img src="img/woman-pic.jpg" alt="GC" />
+              </div>
+            </a>
+            <div class="profile-username">gigawoman</div>
+          </div>
+          <div class="story-profile"> 
+            <a href="story.html">
+              <div class="profile-pic border-story">
+                <img src="img/true-hero.jpg" alt="GC" />
+              </div>
+            </a>
+            <div class="profile-username">truehero</div>
+          </div>
+          <div class="story-profile"> 
+            <a href="story.html">
+              <div class="profile-pic border-story">
+                <img src="img/chadliator.jpg" alt="GC" />
+              </div>
+            </a>
+            <div class="profile-username">chadliator</div>
+          </div>
+          <div class="story-profile"> 
+            <a href="story.html">
+              <div class="profile-pic border-story">
+                <img src="img/true-profile-pic.jpg" alt="GC" />
+              </div>
+            </a>
+            <div class="profile-username">not.king</div>
+          </div>
+          <div class="story-profile"> 
+            <div class="profile-pic border-story">
+              <img src="img/woman-pic2.jpg" alt="GC" />
+            </div>
+            <div class="profile-username">d.3nise</div>
+          </div>
+          <div class="story-profile"> 
+            <div class="profile-pic border-story">
+              <img src="img/profile-pic.jpg" alt="GC" />
+            </div>
+            <div class="profile-username">_giga</div>
+          </div>
+          <div class="story-profile"> 
+            <div class="profile-pic border-story">
+              <img src="img/profile-pic.jpg" alt="GC" />
+            </div>
+            <div class="profile-username">_giga</div>
+          </div>
+          <div class="story-profile"> 
+            <div class="profile-pic border-story">
+              <img src="img/profile-pic.jpg" alt="GC" />
+            </div>
+            <div class="profile-username">_giga</div>
+          </div>
+          <div class="story-profile"> 
+            <div class="profile-pic border-story">
+              <img src="img/profile-pic.jpg" alt="GC" />
+            </div>
+            <div class="profile-username">_giga</div>
+          </div>
+
+        </div>
+        <div class="feed">
+          <div class="feed-post">
+            <div class="profile-info">
+              <div class="profile">
+                <div class="profile-pic">
+                  <div class="border-story"><img src="img/true-hero.jpg" alt="GC"/></div>
+                  <div class="profile-username">
+                    <a href="profile.html">truehero</a>
+                  </div>
+                </div>
+                <div class="options">•••</div>
+              </div>
+              <div class="post">
+                <img src="img/true-profile-pic.jpg" alt="post">
+              </div>
+              <div class="boxx">
+                <div class="post-interactions space-between">
+                  <div class="post-interaction-icons">
+                    <i class="ri-heart-line" id="heart1"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                  </div>
+                  <i class="ri-bookmark-line" id="save1"></i>
+                </div>
+                <div class="likes">
+                  <h3>372,827 curtidas</h3>
+                  <div class="profile-username">
+                    <a href="profile.html">realgigachad</a> <p>chad</p>
+                  </div>
+                  <p class="click-com">Ver todos os 8745 comentários</p>
+                  <span>HÁ 10 HORAS</span>
+                </div>
+                <div class="comment space-between">
+                  <div class="comment-input">
+                    <i class="ri-emotion-happy-line"></i>
+                    <input type="text" placeholder="Adicione um comentário...">
+                  </div>
+                  <div class="change">Publicar</div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="feed-post">
+            <div class="profile-info">
+              <div class="profile">
+                <div class="profile-pic">
+                  <img src="img/true-profile-pic.jpg" alt="GC" />
+                  <div class="profile-username">
+                    <a href="profile.html">realgigachad</a>
+                  </div>
+                </div>
+                <div class="options">•••</div>
+              </div>
+              <div class="post" id="post2">
+                <div class="story-button" id="post-btn1">
+                  <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <div class="story-button" id="post-btn2">
+                  <i class="ri-arrow-left-s-line"></i>
+                </div>
+                <img src="img/true-profile-pic.jpg" alt="post" id="img-post">
+                <img src="img/profile-pic.jpg" alt="post">
+
+              </div>
+              <div class="boxx">
+                <div class="post-interactions space-between">
+                  <div class="post-interaction-icons">
+                    <i class="ri-heart-line" id="heart2"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                  </div>
+                  <i class="ri-bookmark-line" id="save2"></i>
+                </div>
+                <div class="likes">
+                  <h3>2,827 curtidas</h3>
+                  <div class="profile-username">
+                    <a href="profile.html">realgigachad</a> <p>YES</p>
+                  </div>
+                  <p  class="click-com">Ver todos os 59 comentários</p>
+                  <span>HÁ 12 HORAS</span>
+                </div>
+                <div class="comment space-between">
+                  <div class="comment-input">
+                    <i class="ri-emotion-happy-line"></i>
+                    <input type="text" placeholder="Adicione um comentário...">
+                  </div>
+                  <div class="change">Publicar</div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="feed-post">
+            <div class="profile-info">
+              <div class="profile">
+                <div class="profile-pic">
+                  <img src="img/motoworld.jpg" alt="GC" />
+                  <div class="profile-username">
+                    <a href="profile.html">motorcycleworld</a>
+                  </div>
+                </div>
+                <div class="options">•••</div>
+              </div>
+              <div class="post post-4-5">
+                <video src="img/02-bike.mp4" controls></video>
+              </div>
+              <div class="boxx">
+                <div class="post-interactions space-between">
+                  <div class="post-interaction-icons">
+                    <i class="ri-heart-line" id="heart3"></i>
+                    <i class="ri-chat-3-line"></i>
+                    <i class="ri-send-plane-line"></i>
+                  </div>
+                  <i class="ri-bookmark-line" id="save3"></i>
+                </div>
+                <div class="likes">
+                  <h3>72,827 curtidas</h3>
+                  <div class="profile-username" style="max-width: 400px !important;">
+                    <a href="profile.html">motorcycleworld</a> <p style="text-align: left;">Sound test &#x1F525 &#x1F525</p>
+                  </div>
+                  <p class="click-com">Ver todos os 875 comentários</p>
+                  <span>HÁ 8 HORAS</span>
+                </div>
+                <div class="comment space-between">
+                  <div class="comment-input">
+                    <i class="ri-emotion-happy-line"></i>
+                    <input type="text" placeholder="Adicione um comentário...">
+                  </div>
+                  <div class="change">Publicar</div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <aside>
+        <div class="profile">
+          <div class="profile-pic">
+            <img src="img/my-profile-pic.jpeg" alt="GC" />
+            <div class="profile-username">
+              <a href="profile.html">realgigachad</a>
+              <p>Giga Berlin Chad</p>
+            </div>
+          </div>
+
+          <div class="change">Mudar</div>
+        </div>
+        <div class="suggestions">
+          <div class="space-between">
+            <strong>
+              <p>Sugestões para você</p>
+            </strong>
+            <a href="#">Ver tudo</a>
+          </div>
+          <div class="suggested-accounts">
+            <div class="profile">
+              <div class="profile-pic">
+                <img src="img/true-profile-pic.jpg" alt="GC" />
+                <div class="profile-username">
+                  <a href="profile.html">realgigachad2</a>
+                  <p>Novo no instagram</p>
+                </div>
+              </div>
+
+              <div class="change">Seguir</div>
+            </div>
+            <div class="profile">
+              <div class="profile-pic">
+                <img src="img/chinad.jpg" alt="GC" />
+                <div class="profile-username">
+                  <a href="profile.html">notjiping</a>
+                  <p>Novo no instagram</p>
+                </div>
+              </div>
+
+              <div class="change">Seguir</div>
+            </div>
+            <div class="profile">
+              <div class="profile-pic">
+                <img src="img/Screenshot_1.jpg" alt="GC" />
+                <div class="profile-username">
+                  <a href="profile.html">steam_leader</a>
+                  <p>Novo no instagram</p>
+                </div>
+              </div>
+
+              <div class="change">Seguir</div>
+            </div>
+            <div class="profile">
+              <div class="profile-pic">
+                <img src="img/woman-pic.jpg" alt="GC" />
+                <div class="profile-username">
+                  <a href="profile.html">mega1woman</a>
+                  <p>Novo no instagram</p>
+                </div>
+              </div>
+
+              <div class="change">Seguir</div>
+            </div>
+            <div class="profile">
+              <div class="profile-pic">
+                <img src="img/profile-pic.jpg" alt="GC" />
+                <div class="profile-username">
+                  <a href="profile.html">realgigachad4</a>
+                  <p>Novo no instagram</p>
+                </div>
+              </div>
+
+              <div class="change">Seguir</div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-about">
+            <a href="#">Sobre</a>
+            <a href="#">•Ajuda</a>
+            <a href="#">•Imprensa</a>
+            <a href="#">•API</a>
+            <a href="#">•Carreiras</a>
+            <a href="#">•Privacidade•</a> <br>
+            <a href="#">Termos</a>
+            <a href="#">•Localizações</a>
+            <a href="#">•Idioma</a>
+          </div>
+          <span>&#169 2022 INSTAGRAM FROM META</span>
+        </div>
+      </aside>
+    </main>
+
+
+    <div class="section-comments">
+      <div id="close-btn"><i class="ri-close-line"></i></div>
+      <div class="comments-container">
+        <div class="post-comment-container">
+          <img src="img/true-profile-pic.jpg" alt="" />
+        </div>
+        <div class="comment-section">
+          <div class="comment-line1">
+            <div>
+              <img src="img/true-hero.jpg" alt="" />
+              <a href="#">truehero • Seguindo</a>
+            </div>
+            <h3>•••</h3>
+          </div>
+    
+          <div class="all-comments">
+            <div class="comment-line2">
+              <img src="img/true-hero.jpg" alt="" />
+              <a href="#">truehero</a>
+              <p>Always smile!</p>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>Magnificent!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>122 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>I can feel you heart!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>312 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>Brilliant!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>192 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>Magnificent!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>122 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>I can feel you heart!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>312 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>Brilliant!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>192 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>Magnificent!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>122 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>I can feel you heart!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>312 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+            <div class="single-comment">
+              <div>
+                <img src="img/profile-pic.jpg" alt="" />
+                <a href="#">_giga</a>
+                <p>Brilliant!</p>
+                <i class="ri-heart-line" id="heart1"></i>
+              </div>
+              <div class="no-name">
+                <span>7 h</span>
+                <p>192 curtidas</p>
+                <p>Responder</p>
+              </div>
+            </div>
+          </div>
+          <div class="post-interactions space-between">
+            <div class="post-interaction-icons">
+              <i class="ri-heart-line" id="heart1"></i>
+              <i class="ri-chat-3-line"></i>
+              <i class="ri-send-plane-line"></i>
+            </div>
+            <i class="ri-bookmark-line" id="save1"></i>
+          </div>
+          <div class="likes">
+            <h3>372,827 curtidas</h3>
+    
+            <span>HÁ 10 HORAS</span>
+          </div>
+          <div class="comment space-between">
+            <div class="comment-input">
+              <i class="ri-emotion-happy-line"></i>
+              <input type="text" placeholder="Adicione um comentário..." />
+            </div>
+            <div class="change">Publicar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="header.js" defer></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

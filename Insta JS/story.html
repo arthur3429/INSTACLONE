@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stories • Instagram</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="story.css" />
+  </head>
+  <body>
+    <section>
+      <div class="logo">
+        <img src="img/instagram-logo-branca.png" alt="INSTAGRAM" />
+      </div>
+      <div class="story">
+        <div class="story-post"></div>
+        <div class="story-post"></div>
+        <div class="story-post active">
+          <div class="profile">
+            <div class="progress-bar">
+              <div id="progressbar2"></div>
+            </div>
+            <div class="space-between">
+              <div class="profile-info">
+                <img src="img/profile-pic.jpg" alt="pic" />
+                <a href="#">_giga</a>
+                <span>1 h</span>
+              </div>
+              <div class="controls">
+                <i class="ri-pause-line"></i>
+                <i class="ri-volume-mute-fill"></i>
+                •••
+              </div>
+            </div>
+          </div>
+          <div class="story-content">
+            <video src="img/01-couple.mp4" autoplay controls></video>
+          </div>
+          <div class="interact">
+            <input type="text" placeholder="Responder a _giga..." />
+            <div class="interact-icons">
+              <i class="ri-heart-line"></i>
+              <i class="ri-send-plane-line"></i>
+            </div>
+          </div>
+        </div>
+        <div class="story-post" id="story-woman">
+          <div class="profile-pic border-story">
+            <img src="img/woman-pic.jpg" alt="GC" />
+            <div class="text">
+              <a href="#">gigawoman</a>
+              <span>12h</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-post" id="true-hero">
+          <div class="profile-pic border-story">
+            <img src="img/true-hero.jpg" alt="GC" />
+            <div class="text">
+              <a href="#">truehero</a>
+              <span>13h</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-post"></div>
+        <div class="story-post"></div>
+        <div class="story-post"></div>
+      </div>
+      <div class="close">
+        <a href="index.html"><i class="ri-close-fill"></i></a>
+      </div>
+    </section>
+    <script src="story.js"></script>
+  </body>
+</html>

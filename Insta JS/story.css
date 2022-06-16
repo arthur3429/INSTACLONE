@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+section {
+  display: flex;
+}
+
+.logo {
+  padding: 15px;
+  width: calc(5vw + 30px);
+  position: relative;
+}
+
+.story {
+  background-color: #1a1a1a;
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+
+.close {
+  width: calc(5vw + 30px);
+  text-align: end;
+  padding: 10px 15px;
+  color: white;
+  font-size: 40px;
+}
+
+.close a {
+  text-decoration: none;
+  color: white;
+}
+.story-post:nth-child(1),
+.story-post:nth-child(2) {
+  margin: 0 !important;
+  background-color: #1a1a1a00;
+}
+
+.story-post {
+  aspect-ratio: 9 / 16;
+  margin: 0 2%;
+  background-color: #262626;
+  height: 44%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.active {
+  height: 96%;
+  width: auto;
+}
+
+.progress-bar {
+  height: 3px;
+  border-radius: 50%;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.411);
+  margin: 10px auto;
+}
+
+.my-bar {
+  width: 1%;
+  background-color: green;
+  height: 3px;
+}
+
+.progressbar {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.progressbar .inner {
+  height: 3px;
+  border-radius: 2px;
+  animation: progressbar-countdown;
+  /* Placeholder, this will be updated using javascript */
+  animation-duration: 40s;
+  /* We stop in the end */
+  animation-iteration-count: 1;
+  /* Stay on pause when the animation is finished finished */
+  animation-fill-mode: forwards;
+  /* We start paused, we start the animation using javascript */
+  animation-play-state: paused;
+  /* We want a linear animation, ease-out is standard */
+  animation-timing-function: linear;
+}
+
+@keyframes progressbar-countdown {
+  0% {
+    width: 100%;
+    background-color: #fff;
+  }
+  100% {
+    width: 0%;
+    background-color: #fff;
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin: 10px 15px;
+  color: #fff;
+}
+
+.profile-info img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.profile-info a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.profile-info span {
+  opacity: 0.6;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.controls i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.story-content {
+  margin: 0 auto;
+}
+
+.story-content video {
+  width: 100%;
+}
+
+.interact {
+  width: 100%;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.interact input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+}
+
+.interact input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+  padding-left: 10px;
+}
+
+.interact i {
+  margin: 0 5px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.interact i:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.interact-icons {
+  display: flex;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-story {
+  height: 62px;
+  width: 62px;
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%
+  );
+  border-radius: 50%;
+  margin: auto;
+}
+
+.border-story img {
+  margin-left: 2px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.profile-pic img {
+  height: 58px;
+  width: 58px;
+  border-radius: 50px;
+  background-color: #262626;
+  padding: 2px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.39);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text a {
+  color: white;
+  text-decoration: none;
+}
+
+#story-woman {
+  background: url(img/01-woman.jpeg);
+  background-size: contain;
+}
+
+#true-hero {
+  background: url(img/true-hero-story.jpg);
+  background-size: cover;
+}
+
+@media (max-width: 1024px) {
+  .story-post {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    margin: 0 auto;
+  }
+  .logo {
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10%;
+  }
+}
