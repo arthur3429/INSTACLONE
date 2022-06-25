@@ -26,6 +26,8 @@ function storyPosition() {
 
   // Avança para o próximo story
 
+  // Converter a função anonima para uma função normal e chamar ela usando click event e um set time out de 15s
+
   storyBtn.addEventListener("click", () => {
     if (j < story.length - 2) {
       width += story[0].clientWidth + 40;
