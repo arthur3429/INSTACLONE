@@ -2,4 +2,148 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+#root,
+#index-body {
+  position: relative;
+  z-index: -100;
+}
+
+body {
+  background-color: rgb(250, 250, 250);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 841px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0);
+  transition: opacity 75ms linear, transform 38ms ease-out;
+}
+
+/* media queries de tudo */
+
+@media (max-width: 864px) {
+  #index-body main {
+    grid-template-areas: none;
+    width: 100%;
+  }
+
+  #index-body section {
+    padding: 10px;
+  }
+
+  #index-body aside {
+    display: none;
+  }
+
+  #explorer-main {
+    max-width: 841px;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .section-comments {
+    overflow: auto;
+    height: 100%;
+  }
+
+  .comments-container {
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+  }
+
+  .comment-section {
+    width: auto;
+  }
+}
+
+@media (max-width: 764px) {
+  header .search-bar {
+    display: none;
+  }
+
+  header .profile-container {
+    margin: 0;
+  }
+
+  header .profile-container svg,
+  header .profile-container img {
+    margin-left: 16px;
+  }
+
+  #profile-main {
+    max-width: 935px;
+    width: 100%;
+  }
+
+  .profile-posts .box {
+    margin: 2px 4px;
+  }
+
+  .profile-info2 {
+    margin-bottom: 30px;
+  }
+
+  .profile-info2 img {
+    margin: 10px 20px;
+    max-height: 120px;
+    max-width: 120px;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .profile-info2 .my-profile-info {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-info2 img {
+    max-height: 80px;
+    max-width: 80px;
+    margin: 10px;
+  }
+
+  .comments-container {
+    max-width: 98vw;
+  }
+
+  #container {
+    max-width: 448px;
+    width: auto;
+  }
+
+  .search-box .post-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .my-profile-info .info-line1 a,
+  .my-profile-info .info-line1 i {
+    font-size: 20px;
+  }
+
+  .my-profile-info .info-line1 button {
+    font-size: 10px;
+  }
+
+  .my-profile-info .info-line2 p {
+    margin-right: 10px;
+    font-size: 13px;
+  }
 }
