@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 export function Stories() {
   const Stories = styled.section`
-  height: 100vh;
-  width: 100%;
-  background-color: #1a1a1a;
-  position: relative;
-  z-index: 1;
-  display: flex;
-}
+    height: 100vh;
+    width: 100%;
+    background-color: #1a1a1a;
+    position: relative;
+    z-index: 1;
+    display: flex;
+
     .story-button {
       left: 67%;
     }
@@ -98,8 +98,6 @@ export function Stories() {
       transition: 0.4s;
       position: relative;
     }
-
-
   `;
 
   useEffect(() => {
