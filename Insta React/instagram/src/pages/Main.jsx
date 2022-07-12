@@ -9,7 +9,7 @@ import { Stories } from "../components/Stories/stories";
 
 export function Feed() {
   return (
-    <Router>
+    <Router basename="/projetos/instagram-react">
       <Header></Header>
       <Routes>
         <Route path="/" exact element={<Main></Main>}></Route>

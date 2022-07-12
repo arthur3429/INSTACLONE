@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 export function Header() {
   const Header = styled.header`
-      width: 100%;
-      height: 60px;
-      background-color: #fff;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      position: fixed;
-      z-index: 0;
-    }
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 0;
+
     body {
       background-color: rgb(250, 250, 250);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -212,15 +212,15 @@ export function Header() {
       margin-right: 20px;
     }
 
-    .profile-username a, .likes h3 {
+    .profile-username a,
+    .likes h3 {
       font-size: 14px;
       font-weight: 600;
-  }
+    }
 
-  .profile-username p {
-    font-size: 14px;
-
-  }
+    .profile-username p {
+      font-size: 14px;
+    }
 
     .profiles-roll {
       display: flex;
@@ -456,56 +456,56 @@ export function Header() {
     });
 
     //
-    let main = document.querySelector("main");
-    if (main.id == "index-body") {
-      let homeIcon = document.querySelector("#homeIcon");
-      homeIcon.innerHTML = `<svg
-    aria-label="Página inicial"
-    class="_ab6-"
-    color="#262626"
-    fill="#262626"
-    height="24"
-    role="img"
-    viewBox="0 0 24 24"
-    width="24"
-  >
-    <path
-      d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"
-    ></path>
-  </svg>`;
-    } else if (main.id == "direct-main") {
-      let directIcon = document.querySelector("#directIcon");
-      directIcon.innerHTML = `<svg
-    aria-label="Messenger"
-    class="_ab6-"
-    color="#262626"
-    fill="#262626"
-    height="24"
-    role="img"
-    viewBox="0 0 24 24"
-    width="24"
-  >
-    <path
-      d="M12.003 1.131a10.487 10.487 0 00-10.87 10.57 10.194 10.194 0 003.412 7.771l.054 1.78a1.67 1.67 0 002.342 1.476l1.935-.872a11.767 11.767 0 003.127.416 10.488 10.488 0 0010.87-10.57 10.487 10.487 0 00-10.87-10.57zm5.786 9.001l-2.566 3.983a1.577 1.577 0 01-2.278.42l-2.452-1.84a.63.63 0 00-.759.002l-2.556 2.049a.659.659 0 01-.96-.874L8.783 9.89a1.576 1.576 0 012.277-.42l2.453 1.84a.63.63 0 00.758-.003l2.556-2.05a.659.659 0 01.961.874z"
-    ></path>
-  </svg>`;
-    } else if (main.id == "explorer-main") {
-      let explorerBody = document.querySelector("#explorerIcon");
-      explorerBody.innerHTML = `<svg
-    aria-label="Encontrar pessoas"
-    class="_ab6-"
-    color="#262626"
-    fill="#262626"
-    height="24"
-    role="img"
-    viewBox="0 0 24 24"
-    width="24"
-  >
-    <path
-      d="M13.173 13.164l1.491-3.829-3.83 1.49zM12.001.5a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012.001.5zm5.35 7.443l-2.478 6.369a1 1 0 01-.57.569l-6.36 2.47a1 1 0 01-1.294-1.294l2.48-6.369a1 1 0 01.57-.569l6.359-2.47a1 1 0 011.294 1.294z"
-    ></path>
-  </svg>`;
-    }
+    //   let main = document.querySelector("main");
+    //   if (main.id == "index-body") {
+    //     let homeIcon = document.querySelector("#homeIcon");
+    //     homeIcon.innerHTML = `<svg
+    //   aria-label="Página inicial"
+    //   class="_ab6-"
+    //   color="#262626"
+    //   fill="#262626"
+    //   height="24"
+    //   role="img"
+    //   viewBox="0 0 24 24"
+    //   width="24"
+    // >
+    //   <path
+    //     d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"
+    //   ></path>
+    // </svg>`;
+    //   } else if (main.id == "direct-main") {
+    //     let directIcon = document.querySelector("#directIcon");
+    //     directIcon.innerHTML = `<svg
+    //   aria-label="Messenger"
+    //   class="_ab6-"
+    //   color="#262626"
+    //   fill="#262626"
+    //   height="24"
+    //   role="img"
+    //   viewBox="0 0 24 24"
+    //   width="24"
+    // >
+    //   <path
+    //     d="M12.003 1.131a10.487 10.487 0 00-10.87 10.57 10.194 10.194 0 003.412 7.771l.054 1.78a1.67 1.67 0 002.342 1.476l1.935-.872a11.767 11.767 0 003.127.416 10.488 10.488 0 0010.87-10.57 10.487 10.487 0 00-10.87-10.57zm5.786 9.001l-2.566 3.983a1.577 1.577 0 01-2.278.42l-2.452-1.84a.63.63 0 00-.759.002l-2.556 2.049a.659.659 0 01-.96-.874L8.783 9.89a1.576 1.576 0 012.277-.42l2.453 1.84a.63.63 0 00.758-.003l2.556-2.05a.659.659 0 01.961.874z"
+    //   ></path>
+    // </svg>`;
+    //   } else if (main.id == "explorer-main") {
+    //     let explorerBody = document.querySelector("#explorerIcon");
+    //     explorerBody.innerHTML = `<svg
+    //   aria-label="Encontrar pessoas"
+    //   class="_ab6-"
+    //   color="#262626"
+    //   fill="#262626"
+    //   height="24"
+    //   role="img"
+    //   viewBox="0 0 24 24"
+    //   width="24"
+    // >
+    //   <path
+    //     d="M13.173 13.164l1.491-3.829-3.83 1.49zM12.001.5a11.5 11.5 0 1011.5 11.5A11.513 11.513 0 0012.001.5zm5.35 7.443l-2.478 6.369a1 1 0 01-.57.569l-6.36 2.47a1 1 0 01-1.294-1.294l2.48-6.369a1 1 0 01.57-.569l6.359-2.47a1 1 0 011.294 1.294z"
+    //   ></path>
+    // </svg>`;
+    //   }
 
     //
     let addPostIcon = document.querySelector("#addPostIcon");
@@ -645,7 +645,7 @@ export function Header() {
       <div className="header">
         <div className="logo">
           <Link to="/">
-            <a href="#">
+            <a>
               <img
                 src={process.env.PUBLIC_URL + "/images/instagram-logo-1.png"}
                 alt="Instagram"

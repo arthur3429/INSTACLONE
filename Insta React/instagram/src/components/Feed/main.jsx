@@ -4,7 +4,6 @@ import { Story } from "./story-container";
 import { FeedPost } from "./feed-post";
 import { Suggestions } from "./suggestions";
 import { useEffect } from "react";
-import { Header } from "./header/Header.jsx";
 
 export function Main() {
   const Main = styled.main`
